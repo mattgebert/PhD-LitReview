@@ -1,3 +1,6 @@
-.aux
-.out
-.gz
+*.aux
+*.out
+*.gz
+mattg_ti-fi_lit-review.bbl
+mattg_ti-fi_lit-review.blg
+mattg_ti-fi_lit-review.log

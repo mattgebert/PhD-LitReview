@@ -1,0 +1,149 @@
+\documentclass{article} %Report=Chapters, Article=Sections
+
+%-----------------------PACKAGES-----------------------
+\usepackage{geometry} %Allows changes of margins to document.
+\usepackage{amsmath} %Allows text in equations
+\usepackage{float} %Allows Placement of Images & Tables within pages, not at top etc. ie {table}[H]
+%\usepackage{cite} %You want to refer to a bibtex document? But not needed with natbib.
+\usepackage[super,square]{natbib}%Forces small number citations superscripted.
+%\usepackage[natbibapa]{apacite} For particular citing styles?
+\usepackage[dvipsnames]{xcolor} %Allows custom names and colour designs
+%\usepackage{mathtools}
+%\usepackage{tabularx} %Allows table widths to be set.
+\usepackage[final]{pdfpages} %to insert pdf pages of code.
+\usepackage{hyperref} %Hyperlinking \href{URL}{text}
+\usepackage{cleveref} %Allows text like "Figure" to be automatically generated. "\cref{}" == "Tbl. \ref{}"
+\usepackage{matlab-prettifier} %Matlab Code Inserts
+\usepackage{braket} %Dirac Notations
+\usepackage{rotating} %Allows rotation of an image 
+\usepackage{tabularx} %Allows tables that have multiple lines per cell. https://tex.stackexchange.com/questions/194737/multiline-in-a-table-cell
+\usepackage{dsfont} %Allows symbols like \mathds{1} for identity matrix. 
+\usepackage[justification=centering]{caption} %Allows use of subfigure environment with captions inside figure. Justification centering means multiline captions will be centred
+\usepackage{subcaption} %The same as above. https://tex.stackexchange.com/questions/37581
+\usepackage{listings}
+\usepackage{amssymb} %Allows \therefore.
+\usepackage{wrapfig} %Allows wrapping of text around figures. \begin{wrapfigure}[lineheight]{position}{width}
+\usepackage{enumitem} %Allows change of horizontal seperation distances \begin{itemize}[noitemsep,topsep=0pt]
+\usepackage{graphicx} %Enables use of \DeclareGraphicsExtensions command and setting graphics path.
+\usepackage[toc,page]{appendix}%Allows the use of chapters within a \begin{appendices} environment.
+\usepackage{multirow} %Allows the placement of multirow images in the figure environment. https://tex.stackexchange.com/a/394954/137109
+\usepackage{longtable} %Allows the display of large tables over multiple pages. Used in appendix. https://www.tablesgenerator.com/latex_tables#
+\usepackage[english]{babel} %Required to stop '_' causing issues in file references
+
+%\usepackage{glossaries} %To make a glossary.  \makeglossaries  \newglossaryentry{latex}{name= , description={}}
+%						\newacronym{gcd}{GCD}{Greatest Common Divisor}
+\usepackage[nottoc,numbib]{tocbibind} %Adds bibliography to TOC.
+\usepackage{subfiles} %Allows a TEX document to be contained within multiple TEX Files.
+
+%-----------------------COMMANDS-----------------------
+%Mimmic Mathematica Behaviour.
+\newcommand{\pd}{\partial}
+%Code to make a glossary entry:
+\newcommand{\gloss}[2]{\paragraph{}\textbf{#1}	\textit{#2}}
+%Code to change colour to blue of a cite.
+\newcommand{\cc}{\hypersetup{citecolor=blue}}
+%Code to add single equation lines to align*'s
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+%Defines a typeset for generating 'code' text.
+\definecolor{lightgrey}{RGB}{200,200,200}
+\newcommand{\code}[1]{\colorbox{lightgray}{\lstinline[basicstyle=\ttfamily\color{black}]|#1|}}
+%Code to add \textit{et al} text.
+\newcommand{\etal}[1]{\textit{et al}#1}
+\newcommand{\etals}[1]{\textit{et al's}#1}
+%Tensor product symbol
+\newcommand{\tens}{\mathbin{\mathop{\otimes}}} 
+%Trace text in equations:
+\newcommand{\tr}[1]{\text{Tr}\left[#1\right]}
+%Greater and Less than Similar commands simplified:
+\newcommand{\gsim}{\gtrsim}
+\newcommand{\lsim}{\lesssim}
+
+%Materials:
+\newcommand{\silicondioxide}[1]{SiO$_2$#1}
+\newcommand{\aluminimumoxide}[1]{AlO$_3$#1}
+\newcommand{\galliumoxide}[1]{GaO$_3$#1}
+\newcommand{\tinoxide}[1]{SnO}
+\newcommand{\bismuthoxide}[1]{Bi$_2$O$_3$#1}
+
+
+%-----------------------DOCUMENT SETUP-----------------------
+%Allows display breaks in equations across pages. More condensed.
+\allowdisplaybreaks
+%Change the bibliography name to references:
+\renewcommand\bibname{References}
+%Allows custom setup of URL link colours:
+\hypersetup{
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black},
+	colorlinks = true,
+	hidelinks=true
+	%	pdfborder={0 0 1}
+}
+\AtBeginDocument{\hypersetup{ 
+		pdfborder={10 10 0.1 [1 0]}, %Required to go within "\AtBeginDocument" here otherwise overrided. {HorizontalCornerRadius VerticleCordnerRadius Thickness [Dashes PerUnits] }
+		citebordercolor={0 0 1}, %{R G B} on a scale 0 to 1.
+		linkbordercolor={0 0.9 0}, %{R G B} on a scale 0 to 1.	
+}}
+%add specific resources
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
+\graphicspath{ {./graphics/}{./litreview_resources/} }
+
+% --------------------- Document ----------------------------
+
+\setcounter{secnumdepth}{3} %https://tex.stackexchange.com/questions/61033/setting-toc-depth-not-working
+\setcounter{tocdepth}{3} %Allows increased depth into sections from defaul Chap/Sec/Subsec {2}
+
+\font\myTitle=cmr12 at 29pt
+\title{Literature Review}
+\date{\today}
+\author{Matthew Gebert}
+
+\begin{document}
+	\newgeometry{left=3cm, bottom=3cm}
+	\maketitle
+	\begingroup
+	\centering
+%		\scshape\Large Literature Review:\\
+		\vspace{5mm}\LARGE Topological insulators surface states with ferroics\\\vspace{1.5cm}	
+		%	\vspace{5mm}\Large Honours Thesis\\\vspace{1.5cm}	
+	\endgroup
+	\pagenumbering{arabic}
+	\normalfont\normalsize
+		
+		
+\section{Topological Insualtors}
+\subsection{Introduction}
+\subsection{Material Growths}
+
+\section{Magnetic Materials}
+\subsection{Classifications}
+\subsubsection{Ferromagnetic}
+\subsubsection{Anti-ferromagnetic}
+\subsubsection{Paramagnetic}
+\subsubsection{Diamagnetic}
+\subsection{Ferromagnetic Insualtors}
+
+\section{TI \& FI Heterostructures}
+\subsection{Theory}
+\subsection{Experiments}
+\subsubsection{MBE Growths}
+
+\section{}
+
+
+\section{Knowledge \& Concepts}
+\subsection{Symmetry}
+Apparently ssymmetry is very important in all physical systems. 
+For example, the order exhibited in crystals can be described through the breaking of the continuous (rotational \& translational) symmetry of space. This is due to the electrostatic interactions that cause a periodic lattice. In Magnets, spin space and time reversal symmetry are broken.
+%
+
+
+
+
+\bibliographystyle{unsrt}
+\bibliography{MyLibrary}
+
+
+
+\end{document}
