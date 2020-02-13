@@ -14,7 +14,7 @@
 \usepackage{hyperref} %Hyperlinking \href{URL}{text}
 \usepackage{cleveref} %Allows text like "Figure" to be automatically generated. "\cref{}" == "Tbl. \ref{}"
 \usepackage{matlab-prettifier} %Matlab Code Inserts
-\usepackage{braket} %Dirac Notations
+%\usepackage{braket} %Dirac Notations
 \usepackage{rotating} %Allows rotation of an image 
 \usepackage{tabularx} %Allows tables that have multiple lines per cell. https://tex.stackexchange.com/questions/194737/multiline-in-a-table-cell
 \usepackage{dsfont} %Allows symbols like \mathds{1} for identity matrix. 
@@ -34,6 +34,7 @@
 %						\newacronym{gcd}{GCD}{Greatest Common Divisor}
 \usepackage[nottoc,numbib]{tocbibind} %Adds bibliography to TOC.
 \usepackage{subfiles} %Allows a TEX document to be contained within multiple TEX Files.
+\usepackage{natbib}
 
 %-----------------------COMMANDS-----------------------
 %Mimmic Mathematica Behaviour.
@@ -114,6 +115,9 @@
 		
 \section{Topological Insualtors}
 \subsection{Introduction}
+\subsection{Spin-Orbit Coupling}
+Doesn't break time-reversal symmetry like magentic field for QHE, but can lead to \textbf{quantum spin hall effect}, or QSHE, where electrons differentiated by their spin move in opposite directions. No conserved spin current to test in a material.
+
 \subsection{Material Growths}
 
 \section{Magnetic Materials}
@@ -127,6 +131,11 @@
 \section{TI \& FI Heterostructures}
 \subsection{Theory}
 \subsection{Experiments}
+https://www-nature-com.ezproxy.lib.monash.edu.au/articles/nature13534
+https://advances.sciencemag.org/content/5/8/eaaw3415
+https://tms16.sciencesconf.org/data/pages/TI\_lecture2.pdf
+https://arxiv.org/pdf/1401.0848.pdf
+
 \subsubsection{MBE Growths}
 
 \section{}
@@ -139,9 +148,47 @@ For example, the order exhibited in crystals can be described through the breaki
 %
 
 
+\subsection{Spintronics}
+\subsubsection{Ahrimhov Bohm Effect}
+
+\subsection{Fine Structure Constant}
+The fine structure constant, also known as Sommerfields constant, is the coupleing constant "$\alpha$" that measures the strength of the EM force interacting with light.
+
+Two methods it has been measured by include the anomalous magnetic moment of the electron, $a_e$, as well as appearing in the Quantum Hall Effect (QHE). 
+
+It was originally introduced by Summerfieldas a theoretical correction to the Bohr  model, explaining fine structure through elliptical orbits and relitivistic mass-velocity. 
+
+\subsection{Hamiltonians of Crystal Lattices}
+Turns out that you can describe the hamiltonian of the electrons in a crystal lattice.  For this, there exists first quantisation, second quantisation hamiltonian.
+
+\begin{itemize}
+	\item First quantisation - The classical particles are assigned wave amplitudes. This is "semi-classical" where only the particles or objects are treated using quantum wavefunctions, but environment is classical. 
+	\item Second quantisation (Canonical Quantisation, occupation number representation) - The wave fields are "quantized" to describe the problem in terms of "quanta" or particles. This usually means referring to a wavefunction of a state, described the the vacuum state with a series of creation operators to create the current state.
+	Fields are now treated as field operators, similar to how physical quantities (momentum, position) are thought of as operators in first quantisation. 
+\end{itemize}
+
+\subsubsection{Graphene}
 
 
-\bibliographystyle{unsrt}
+\section{Review Article Notes}
+\subsection{J. Moore - The Birth}
+\subsubsection{Lessons from the past}
+\begin{itemize}
+	\item Quantum Hall Effect can occur in 2D systems (condined) in the presence of a magentic field. It is a consequence of topological properties of the electronic wavefunctions.
+	\item Question - Can this effect arise without a large external magnetic field?
+	\item Predicted that forces from motion through crystal lattice could provide the same hall state.
+	\item The mechanism which this recently has occured through is \textbf{spin-orbit coupling} or SOC. Spin and orbital angular momentum degrees of freedom are coupled. This coupling causes electrons to feel a spin dependent force.
+	\item QSHE predicted in 2003. Unclear how to measure or if realistic or not.
+	\item Kane \& Mele in 2005 produced a key theory advance, using realistic models. Showed that QSHE can survive by the use of invariants and could compute if the 2D material has an edge state or not. 2D Insulators that have 1D wires that conduct perfectly at low temps, similar to QHE. \cite{kane_z_2005}
+	\item (Hg,Cd)Te quantum wells predicted to have quantized charge conductance  \cite{bernevig_quantum_2006}. These were then picked up in 2007 \cite{konig_quantum_2007}.
+\end{itemize}
+
+
+
+\subsection{title}
+
+
+\bibliographystyle{unsrtnat}
 \bibliography{MyLibrary}
 
 
