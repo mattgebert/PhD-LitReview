@@ -35,6 +35,7 @@
 \usepackage[nottoc,numbib]{tocbibind} %Adds bibliography to TOC.
 \usepackage{subfiles} %Allows a TEX document to be contained within multiple TEX Files.
 \usepackage{natbib}
+\usepackage{outlines} %useful package to be able to do subitem enumerates and lists. use \begin{outline} with option [enumerate] instead of itemize with \1 \2 \3 as sub indexes.
 
 %-----------------------COMMANDS-----------------------
 %Mimmic Mathematica Behaviour.
@@ -65,6 +66,7 @@
 \newcommand{\galliumoxide}[1]{GaO$_3$#1}
 \newcommand{\tinoxide}[1]{SnO}
 \newcommand{\bismuthoxide}[1]{Bi$_2$O$_3$#1}
+\newcommand{\bismuthselinide}[1]{Bi$_2$Se$_3$#1}
 
 
 %-----------------------DOCUMENT SETUP-----------------------
@@ -136,7 +138,18 @@ https://advances.sciencemag.org/content/5/8/eaaw3415
 https://tms16.sciencesconf.org/data/pages/TI\_lecture2.pdf
 https://arxiv.org/pdf/1401.0848.pdf
 
+
+\section{Experimental Methods}
+
+\subsection{Synthesis, Growth and Fabrication}
 \subsubsection{MBE Growths}
+
+\subsection{Metrological Methods}
+\subsubsection{ARPES}
+For material characterisation, angle resolved photo-emission spectroscopy (ARPES) is a method of resolving the ejection of electrons from a material by high energy photons. Analysis of the momentum of the incident and emission resolve the electronic band structure. 
+
+
+
 
 \section{}
 
@@ -182,12 +195,26 @@ Turns out that you can describe the hamiltonian of the electrons in a crystal la
 	\item Kane \& Mele in 2005 produced a key theory advance, using realistic models. Showed that QSHE can survive by the use of invariants and could compute if the 2D material has an edge state or not. 2D Insulators that have 1D wires that conduct perfectly at low temps, similar to QHE. \cite{kane_z_2005}
 	\item (Hg,Cd)Te quantum wells predicted to have quantized charge conductance  \cite{bernevig_quantum_2006}. These were then picked up in 2007 \cite{konig_quantum_2007}.
 \end{itemize}
-\subsection{Going 3D}
-\begin{itemize}
-	\item 2006 gave the revelation that while QHE doesn't go 2D to 3D, the TI does, subtly. \cite{fu_topological_2007, moore_topological_2007, roy_topological_2009}
-	\item "Weak 3D TI" given through stacking of multiple 2D TIs. Not stable to disorder. A dislocation will always conains a quantum wire at the edge.
-	\item "Strong 3D TI", connects ordinary insulators and topological insualtors by breaking time-reversal symmetry. \cite{moore_topological_2007}
-\end{itemize}
+\subsubsection{Going 3D}
+\begin{outline}
+	\1 2006 gave the revelation that while QHE doesn't go 2D to 3D, the TI does, subtly. \cite{fu_topological_2007, moore_topological_2007, roy_topological_2009}
+	\1 "Weak 3D TI" given through stacking of multiple 2D TIs. Not stable to disorder. A dislocation will always conains a quantum wire at the edge.
+	\1 "Strong 3D TI", connects ordinary insulators and topological insualtors by breaking time-reversal symmetry. \cite{moore_topological_2007} This is the focus result for experimental physics at the moment.
+	\1 SOC is also required, but mixes all spins, unlike the 2D case. Spin direction dictates the momentum along the surface. Scattering also occurs, but metallic surface cannot vanish.
+	\1 First 3D TI was Bi$_x$Sb$_{1-x}$. Surfaces mapped using ARPES experiment. The surface was complex, but launched a search for other TIs. \cite{hsieh_topological_2008,hsieh_observation_2009}.
+	\1 Heavy metal, small bandgap semiconductors are meant to be the best candidates (this sounds like TMDs haha but not implied) for two reasons.
+		\2 SOC is relativistic, and only strong for heavy elements.
+		\2 Large bandgaps, relative to the scale of SOC, will not allow SOC to change the phase. This is because bands either need to invert or be able to cross or change properties by local deformation (I think).
+	
+	\1 The discovery of Bismuth Selenide Bi$_2$Se$_3$ and Bismuth Telluride Bi$_2$Te$_3$. They exhibit TI behaviour to higher temperatures, bulk bandgaps of $>$ 0.1 eV \cite{xia_observation_2009,zhang_topological_2009,chen_experimental_2009}.
+ 		\2 The large bandgap is good for measurement in higher temperature
+ 		\2 Simple surface states to investigate heterostructures etc. 
+ 		\2 Complication - Distinction between surface and bulk states - residual conductivity resulting from impurities.
+	
+	\1 \bismuthselinide{} looks like Graphene, due to it's Dirac nature. The difference for graphene is that a TI has only one Dirac point. Graphene has spin degeneracy with two Dirac points. The difference is major, including applications for quantum computing.
+	
+	
+\end{outline}
 
 
 \subsection{title}
