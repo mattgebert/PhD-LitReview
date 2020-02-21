@@ -244,10 +244,70 @@ Turns out that you can describe the hamiltonian of the electrons in a crystal la
 		\1 Applications are in electronics and magnetic memeory, not due to speed, but rather due to reproducability and no fatigue, as a result purely from the electrons.
 		\1 Apparently, you can determine if a material is topological or not, purely from a polarizing magnetic field measurement.
 		\1 The magnetoelectric effect can also create an electric field from a magnetic source, and vice versa. 
+		
+		\1 Some work also done to find similar phases, in materials with differing symmetries. Cooper pairs in superfluids ($^3$He) are closely connected to the quasiparticles/electrons in topological insulators. Direct experimental signatures would be awesome.
+		
+		\1 Moore goes on to talk about the interface of a superconductor and a topological insulator:
+			\2 Creation of emergent particles
+			\2 TI surface becomes superconducting | Proximity effect
+				\3 Vortex line from SC into the TI, a 0-energy Majorana fermion is trapped.
+				\3 Majorana fermions have different quantum numbers to that of a regular electron.
+				\3 Is roughly 'half' of an electron,  and it's own antiparticle.
+			\2 Direct observation of Majorana fermions is a long sought goal
+			\2 New particle statistics for other quasiparticles and systems. 
+	\end{outline} 
+
+\subsection{The Quantum Spin Hall Effect \& Topological Insulators \cite{qi_quantum_2010} - Physics Today (2010)}
+	\subsubsection{Intro}
+	\begin{outline}
+	\1 Phases \& phenomena defined by symmetry	
+		\2 Translation = Crystal Solids
+		\2 Rotational = Magents
+		\2 Gauge = Superconductors
+	\1 QHE first example of non-spontaneously broken symmetry.
+		\2 Topologically defined, not geometrically!
+	\1 SQHE states are distinct again. 
+		\2 Immune to impurities or geometric pertubations (momentum spin locking, scattering is supressed)
+		\2 Maxwells equations altered by an additional 'topolgical' term, with remarkable effects. 
+	\1 QHE differs to QSH
+		\2 QHE External magnetic field required, TR symmetry broken
+		\2 QSHE TR symmetric.
+	\end{outline}
+	\subsubsection{QH to QSH}
+	\begin{outline}
+	\1 Traffic control seperating out lanes of movement provides much less resistance. Same for QSH.
+	\1 QHE Magnetic field pushes electrons to side lanes.
+		\2 there are only two degrees of freedom in the system (forward above and back below)
+		\2 There is no way for electrons to turn around
+		\2 limited by external Magnetic Field requirement
+	\1 In a real 1D system, you have four channels - spin up and down, moving forward and backward
+		\2 These were predicted to be able to split into 2 separate chanels on two sides of the material. 
+	\1 The backscattering supression is quantum mechanical.
+		\2 Electrons in edge states can be thought to circle around the edge of the impurity and scatter backwards.
+		\2 Depending on which way they rotate, they pick up a phase of $\pi$ or $-\pi$ (imagine a vector rotating around a circle). 
+		\2 This induces a $2\pi$ phase difference between the two bodies. 
+		\2 In QM, this corresponds to a negative sign. This means their amplitudes destructively interfere, leading to perfect transmission instead.
+		\2 If the impurity is magnetic, TR symmetry is broken, and there is no longer destructive interference.
+		\2 In an unseparated system (two movers back and foward) then spin doesn't need to change phase and regular scattering can take place.
+		\2 The consequence then is, that there needs to be an "odd" number of forward and backward movers.
+		\2 This is the heart of the $Z_2$ topological quantum number, and why a QSH insulator is also referred to as a topological insulator.
+	\1 Requirements for 2D TIs
+		\2 Heavy elements produce coupling of spin and orbital motion, relativistic.
+	\1 Bernevig, Hughes and Zhang proposed a mechanism for finding TIs, nanoscopic layers sandwiched between other materials, become TIs after a critical thickness $d_c$. 
+		\2 Mechanism is "band inversion", where general ordering of valence and coduction band is inverted by SOC.
+		\2 Generally, \textit{s} orbitals contribute to conduction band, and valence is from the \textit{p} band.
+		\2 In Hg and Te, SOC pushes S band above, and P band below.
+		\2 Sandwiched between with Cadmium Telluride (similar lattice constant, but VERY different SOC).
+		\2 Changing the thickness parameter changes the overall SOC of the quantum well. 
+		
+	
 	\end{outline}
 
-\subsection{title}
 
+\section{Questions to Answer}
+	\begin{itemize}
+		\item SOC - Why only in heavier elements? Explain properly. Also, why think relativistically? Motion of electron means magnetic field observed?
+	\end{itemize}
 
 \bibliographystyle{unsrtnat}
 \bibliography{MyLibrary}
