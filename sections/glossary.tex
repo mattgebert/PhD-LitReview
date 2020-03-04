@@ -1,0 +1,38 @@
+\documentclass[../mattg_ti-fii_lit-review.tex]{subfiles}
+
+\begin{document}
+	\subsection{B}
+	\begin{itemize}
+		\item 
+			\textbf{Berry Connection} is the bra-ket of a Gradient operator of vector $\vec{R}$ acting on a wavefunction over some path  $\Gamma$ with positions $\vec{R}$. Physically it is the mechanism from getting one geometric space point to another, ie the change of parameters.
+			\begin{equation}
+				\vec{\mathcal{A}_n}(\vec{R}) = i\braket{\psi_n(\vec{R})|\nabla_{\vec{R}}|\psi_n(\vec{R})}
+			\end{equation}
+			This object has N parts, for each of the vector components. There's a different connection for every eigenstate, of every point in the space. 
+			It's a little more subtle than a vector - it transforms under Gauge transformations. For an example wavefunction to include some additional phase factor (i.e. Gauge transformation) $\ket{\psi_n'(\vec{R})}=e^{-i\beta(\vec{R})}\ket{\psi_n(\vec{R})}$
+			\begin{equation}
+				\vec{\mathcal{A}_n'}(\vec{R}) = \vec{\mathcal{A}_n}(\vec{R}) + \nabla_{\vec{R}}\beta(\vec{R})
+			\end{equation}
+			So the "connection" is that it transforms with the gradient of a function, like a vector potential.
+		\item 
+			\textbf{Berry Curvature} is the consequence or result of going from one set of starting parameters to the same set of parameters over some path (also called a \textbf{connection}). You could use the Schroedinger equation to provide a connection. It turns out that through evolution the state can pick-up a phase factor, relative to the original starting state. This phase factor is also known as the Berry phase, and has consequences for the quantum mechanical properties of the system.
+		\item 
+			\textbf{Berry Phase} is the integral
+			\begin{align}
+				\gamma_n(\Gamma) &= \int_\Gamma \vec{\mathcal{A}_n}(\vec{R})\cdot d\vec{R}\\
+				\text{Changing gauge: }\gamma'_n(\Gamma) &= \int_\Gamma \vec{\mathcal{A}_n}(\vec{R})\cdot d\vec{R} + \int_\Gamma \nabla_{\vec{R}}\vec{\beta} \cdot d\vec{R}\\
+				\implies \gamma'_n(\Gamma) &= \gamma_n(\Gamma) + \beta(R_f) - \beta(R_i)
+			\end{align}
+			It's not Gauge invariant, which makes it difficult to be useful for different measurements. However, if you begin \textbf{AND} end in the same configuration point (ie, a closed loop) then this value is Gauge invariant!
+			\begin{itemize}
+				\item Eigenstates have to be imaginary to achieve a non-zero Berry phase.
+				\item If the path is 1D, then the integration cancels out to result in a zero Berry phase, again.
+				\item In 3D, the Berry phase over some path $\Gamma$ enclosing a surface $S$, then Stokes theorem lets you specify the \textbf{Berry curvature} 
+				\begin{align}
+					\oint_\Gamma \vec{\mathcal{A}_n}\cdot d\vec{R} &= \oiint_S \left(\nabla\times\vec{\mathcal{A}}\right)\cdot d\vec{a}\\
+					\vec{D}&=\nabla_{\vec{R}}\times\vec{\mathcal{A}}(\vec{R})
+				\end{align}
+			\end{itemize}
+	\end{itemize}
+		
+\end{document}

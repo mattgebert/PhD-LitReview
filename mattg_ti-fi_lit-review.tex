@@ -36,6 +36,8 @@
 \usepackage{subfiles} %Allows a TEX document to be contained within multiple TEX Files.
 \usepackage{natbib}
 \usepackage{outlines} %useful package to be able to do subitem enumerates and lists. use \begin{outline} with option [enumerate] instead of itemize with \1 \2 \3 as sub indexes.
+\usepackage{braket} %allows use of \bra and \ket for QM.
+\usepackage{esint} %allows use of \oint \oiint and other such integrals. Use \limits_{Expression} to place underneath integrals.
 
 %-----------------------COMMANDS-----------------------
 %Mimmic Mathematica Behaviour.
@@ -50,8 +52,7 @@
 \definecolor{lightgrey}{RGB}{200,200,200}
 \newcommand{\code}[1]{\colorbox{lightgray}{\lstinline[basicstyle=\ttfamily\color{black}]|#1|}}
 %Code to add \textit{et al} text.
-\newcommand{\etal}[1]{\textit{et al}#1}
-\newcommand{\etals}[1]{\textit{et al's}#1}
+\newcommand{\etal}[1]{\textit{et al.}#1}
 %Tensor product symbol
 \newcommand{\tens}{\mathbin{\mathop{\otimes}}} 
 %Trace text in equations:
@@ -122,34 +123,7 @@
 \textcolor{red}{TO COMPLETE AFTER}
 
 \section{Topological Insualtors}
-\subsection{Introduction}
-In the last two decades there has been a vast discovery of new materials that exhibit phenomenal properties interesting for condensed matter physics research. Usually these materials are stumbled upon experimentally, however in the case of topological materials the setting and expectation was purely theoretical.
-
-Topological insulators (TIs) attract interest because of their unique properties related to electronics. 2D and 3D compounds have edge and surface electronic states respectively, and these states exhibit useful properties such as momentum-spin locking (or localised spin densities) and suppressed back-scattering (lower resistance, ensured conductivity).
-
-%TODO: Talk about general origins of the field of TIs. Lead into hall effect.
-
-\subsection{Quantum Hall Effect}
-
-The quantum hall effect (QHE) was first discovered in a 2D semiconductors (created via the interface of two semiconductors) %TODO:Cite Klitzing et all 1980.
-At low temperatures, localisation of electrons in combination with Landau quantisation (\textcolor{red}{describe this}), leads to vanishing conductivity $\rho_{xx}$ and quantised Hall conductivity $\rho_{xy}$.  %TODO
-What makes this fascinating is that the QHE is a clear example of macroscopic quantum phenomena. Other such phenomena include Bose Einstein Condensation, where many atoms condense into the same uniform quantum state, and superconductivity where the pairing of electrons (couper pairs) also produce a new phase of macroscopic quantum behaviour.
-
-The QHE is also topological. Thouless, Kohmoto, Nightingale, and den Nijs (TKNN) recognised in the QHE that K space maps to a non-trivial hilbert space. The topology of the space can be specified by an integer $\nu$ which also corresponds to the hall conductance, $\sigma_{xy}=\nu \frac{e^2}{h}$. 
-
-\textcolor{red}{Show calculation of berry phase of the bloch wave function calculated around the BZ boundary divided by 2 pi} %TODO
-
-
-
-
-\subsection{Band inversion}
-\subsection{Spin-Orbit Coupling}
-Doesn't break time-reversal symmetry like magentic field for QHE, but can lead to \textbf{quantum spin hall effect}, or QSHE, where electrons differentiated by their spin move in opposite directions. No conserved spin current to test in a material.
-
-\subsection{2D Dirac Systems}
-
-\subsection{Materials \& Growths}
-\subsubsection{\bismuthselinide{}}
+\subfile{sections/topological_insulators.tex}
 
 \section{Magnetic Materials}
 \subsection{Classifications}
@@ -215,10 +189,6 @@ Turns out that you can describe the hamiltonian of the electrons in a crystal la
 \subsubsection{Graphene}
 
 
-\section{Review Article Notes}
-\subfile{sections/notes.tex}
-
-
 	
 
 
@@ -227,6 +197,12 @@ Turns out that you can describe the hamiltonian of the electrons in a crystal la
 		\item SOC - Why only in heavier elements? Explain properly. Also, why think relativistically? Motion of electron means magnetic field observed?
 		\item Spin is in the 2D surface plane of a 3D TI, always perpendicular to that of the momentum - how can I couple a ferromagnetic material if there's no out-of plane?
 	\end{itemize}
+
+\section{Glossary}
+\subfile{sections/glossary.tex}
+
+\section{Review Article Notes}
+\subfile{sections/notes.tex}
 
 \bibliographystyle{unsrtnat}
 \bibliography{MyLibrary}
