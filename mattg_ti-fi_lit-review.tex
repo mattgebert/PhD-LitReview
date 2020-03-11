@@ -38,8 +38,14 @@
 \usepackage{outlines} %useful package to be able to do subitem enumerates and lists. use \begin{outline} with option [enumerate] instead of itemize with \1 \2 \3 as sub indexes.
 \usepackage{braket} %allows use of \bra and \ket for QM.
 \usepackage{esint} %allows use of \oint \oiint and other such integrals. Use \limits_{Expression} to place underneath integrals.
+\usepackage{csquotes} %Allows quotations, such as \enquote, \blockcquote or \begin{dispalycquote}
+\usepackage{epigraph} %Allows feature quotations which look niceish. \epigraph{Quote}{Author}
+
+
 
 %-----------------------COMMANDS-----------------------
+%Stylized quote command for features in text. 
+\newcommand{\customquote}[3]{\begin{quotation} \textit{#1} \end{quotation} \begin{flushright} - #2, \textit{#3}\end{flushright} }
 %Mimmic Mathematica Behaviour.
 \newcommand{\pd}{\partial}
 %Code to make a glossary entry:
@@ -71,6 +77,11 @@
 \newcommand{\bismuthtelluride}[1]{Bi$_2$Te$_3$#1}
 \newcommand{\antimonyselenide}[1]{Sb$_2$Se$_3$#1}
 \newcommand{\antimonytelluride}[1]{Sb$_2$Te$_3$#1}
+\newcommand{\cgt}[1]{Cr$_2$Ge$_2$Te$_6$#1}
+\newcommand{\mercurytelluride}[1]{HgTe#1}
+\newcommand{\cadmiumtelluride}[1]{CdTe#1}
+\newcommand{\bismuthantimony}[1]{Bi$_{1-x}$Sb$_x$#1}
+
 
 
 %-----------------------DOCUMENT SETUP-----------------------
@@ -92,6 +103,10 @@
 		citebordercolor={0 0 1}, %{R G B} on a scale 0 to 1.
 		linkbordercolor={0 0.9 0}, %{R G B} on a scale 0 to 1.	
 }}
+%Setup Epigraph quoting:
+\setlength\epigraphwidth{.8\textwidth}
+\setlength\epigraphrule{0pt}
+
 %add specific resources
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
 \graphicspath{ {./graphics/}{./litreview_resources/} }
@@ -112,7 +127,7 @@
 	\begingroup
 	\centering
 %		\scshape\Large Literature Review:\\
-		\vspace{5mm}\LARGE Topological insulators surface states with ferroics\\\vspace{1.5cm}	
+		\vspace{5mm}\LARGE Interfacing topological insulators surface states with ferroics\\\vspace{1.5cm}	
 		%	\vspace{5mm}\Large Honours Thesis\\\vspace{1.5cm}	
 	\endgroup
 	\pagenumbering{arabic}
@@ -126,45 +141,20 @@
 \subfile{sections/topological_insulators.tex}
 
 \section{Magnetic Materials}
-\subsection{Classifications}
-\subsubsection{Ferromagnetic}
-\subsubsection{Anti-ferromagnetic}
-\subsubsection{Paramagnetic}
-\subsubsection{Diamagnetic}
-\subsection{2D Ferromagnetic Insualtors}
-\section{Experimental Methods}
-\subsection{Synthesis, growth and fab tools}
-\subsection{Experiments}
+\subfile{sections/magnetic_materials.tex}
+
+
 \section{TI \& FI Heterostructures}
-\subsection{Theory}
-\subsection{Experiments}
-
-https://www-nature-com.ezproxy.lib.monash.edu.au/articles/nature13534
-https://advances.sciencemag.org/content/5/8/eaaw3415
-https://tms16.sciencesconf.org/data/pages/TI\_lecture2.pdf
-https://arxiv.org/pdf/1401.0848.pdf
-
+\subfile{sections/TI_&_FI_Heterostructures.tex}
 
 \section{Experimental Methods}
-
-\subsection{Synthesis, Growth and Fabrication}
-\subsubsection{MBE Growths}
-
-\subsection{Metrological Methods}
-\subsubsection{ARPES}
-For material characterisation, angle resolved photo-emission spectroscopy (ARPES) is a method of resolving the ejection of electrons from a material by high energy photons. Analysis of the momentum of the incident and emission resolve the electronic band structure. 
-
-
-
-
-\section{}
+\subfile{sections/experimental_methods.tex}
 
 
 \section{Knowledge \& Concepts}
 \subsection{Symmetry}
-Apparently ssymmetry is very important in all physical systems. 
+Symmetry is very important in all physical systems. 
 For example, the order exhibited in crystals can be described through the breaking of the continuous (rotational \& translational) symmetry of space. This is due to the electrostatic interactions that cause a periodic lattice. In Magnets, spin space and time reversal symmetry are broken.
-%
 
 
 \subsection{Spintronics}
@@ -189,13 +179,17 @@ Turns out that you can describe the hamiltonian of the electrons in a crystal la
 \subsubsection{Graphene}
 
 
-	
+\section{Quotes}
+\epigraph{\textit{Finally we introduce the parameter of which all the fuss is about.}}{R.F. Hofstadter, \textit{\cite{hofstadter_energy_1976}}}
 
 
 \section{Questions to Answer}
 	\begin{itemize}
 		\item SOC - Why only in heavier elements? Explain properly. Also, why think relativistically? Motion of electron means magnetic field observed?
 		\item Spin is in the 2D surface plane of a 3D TI, always perpendicular to that of the momentum - how can I couple a ferromagnetic material if there's no out-of plane?
+		\item ARPES - how can this be used to verify the surface states of TI materials? (and differentiate from the bulk).
+		\item Dirac Cones - why do these only appear in 2D systems.
+		\item Why is spin-polarization called "Helical" spin polarization?
 	\end{itemize}
 
 \section{Glossary}
