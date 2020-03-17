@@ -1,0 +1,116 @@
+\documentclass[../mattg_ti-fi_lit-review.tex]{subfiles}
+
+
+\subsection{History through Hall effects}
+
+\begin{figure}[H]\label{fig:ti_qh-trio}
+	\centering
+	\includegraphics{ti_qh-trio.jpg}
+	\caption{The three QH states discovered thus far \cite{oh_complete_2013}}
+\end{figure}
+
+\subsubsection{Quantum Hall effect}\label{sec:QHE}
+
+The quantum hall effect (QHE) was first discovered in MOSFET \footnote{Metal-oxide semiconductor field effect transistors} transistors 1980\cite{klitzing_new_1980}, through a 2 dimensional electron gas (2DEG) found at the interface of a bulk semiconductor and the gate oxide.  %TODO:Cite Klitzing et all 1980.
+
+When introducing a magnetic field to materials, you can produce something called Landau quantisation. You can think of the physical mechanism as the quantisation of cyclotron orbits for charged particles in magnetic fields \footnote{The reason for cyclotron orbits is due to the single valued electron wavefunction, ie $\oint \vec{P}\cdot d\vec{r} = 2\pi N$}. This has the effect of creating new bands called "Landau Levels", that each posses large numbers of orbitals. The degeneracy of the level goes as 
+
+\begin{equation}
+	\text{Degeneracy} = \frac{B\times A}{\phi_0}=\frac{B\times A}{h/e}
+\end{equation}
+
+This means for some Fermi energy, that you can choose the magnetic field to appropriate values to fill these Landau levels. 
+
+\begin{figure}[H]\label{fig:ti_qhe}
+	\centering
+	\includegraphics[width=\linewidth/2]{ti_qhe}
+	\caption{The quantum Hall effect. \\Courtesy of D.R. Leadley, Warwick University 1997.}
+\end{figure}
+
+The QHE looks finely tuned, but because of electrons interacting at the edge there is a confinement of edge states \cite{haldane_topological_2018}.  The edge states dominate transport when the Landau levels of the bulk are filled. Because they are dissipationless, the resistivity $\rho_{xx}$ of the system vanishes, before reaching the next Landau level, where scattering between bulk states can occur again. This is the hallmark\footnote{Although unrelated to the Hall effect, get the pun? Haha.} of topological states, where there exists some states between different phases of matter.  
+
+The Hall resistivity $\rho_{xy}$ exhibits quantised levels however.
+
+\begin{equation} \label{eqn:qhe-conductivity}
+\sigma_{xy}=\nu \frac{e^2}{h}
+\end{equation}
+
+Thouless (who later received the noble prize in 2016, before passing away in 2019), Kohmoto, Nightingale, and den Nijs (TKNN) \cite{thouless_quantized_1982} where interested in gapped bulk systems but with conductive edges and a periodic lattice potential. These systems had been argued for explaining the QHE by Laughlin\cite{laughlin_quantized_1981} and the integer effects had earlier been demonstrated theoretically by Hofstadter's Butterfly\cite{hofstadter_energy_1976}. TKNN recognised that \textbf{K} space maps to a non-trivial Hilbert space for the QHE; the space has a topology. This topology can be specified by the integer $\nu$ which also corresponds to the hall conductance above in Eq. \ref{eqn:qhe-conductivity}. In particular, their calculations only depended on details of the wavefunctions of the bandstructure. 
+
+\textcolor{red}{Show calculation of berry phase of the Bloch wave function calculated around the BZ boundary divided by 2 pi} %TODO
+
+What makes this fascinating is that the QHE is a clear example of macroscopic quantum phenomena. Other such phenomena include Bose Einstein Condensation, where many atoms condense into the same uniform quantum state, and superconductivity where the pairing of electrons (Cooper pairs) also produce a new phase of macroscopic quantum behaviour. %TODO check this...
+
+For the QHE to occur, the Landau quantisation opens gaps in the band structure of the material, and the chemical potential is situated within this gap. In a classical picture, the boundaries of the material cannot sustain these cyclotron orbit, because of the phase transition to an ordinary insulator, rather than the QHE insulator, and so edge channels open in a \textbf{bulk-boundary correspondence}. 
+
+Note that the QHE does not preserve \textbf{time reversal} (TR) \textbf{symmetry}, as charge carriers experience different forces due to the magnetic field when their direction is inverted. The magnetic field breaks TR symmetry. You can see this in the two degrees of freedom in the system; For an out of plane magnetic field, charge is separated into two lanes, and those channels move a particular direction, ie forward above for electrons, backward below for holes. Reversing the direction of carriers yields the same channels but switched, forward above for holes, backward below for electrons. 
+
+\subsubsection{Quantum spin Hall effect}\label{sec:QSHE}
+The spin hall was observed in 2004 by Kato \etal{} \cite{kato_observation_2004}, where for particular semiconductors a spin density was observed rather than a charge density, like in the regular hall effect.
+The origins for such an phenomenon are similar to that of the \hyperref[sec:QAHE]{quantum anomalous Hall effect} in ferromagnets, sometimes being extrinsic, sometimes intrinsic. Intrinsically, the \textbf{Berry curvature} of the electronic valence-band Bloch wave functions result in spin-Hall effect. 
+
+The spin Hall insulator was proposed by Zhang's group\cite{murakami_spin-hall_2004}, where the \textbf{Berry phase} is finite implying a finite spin Hall conductivity. While this idea did not ``generate spin currents due to an absence of any electrons at the Fermi level"\cite{ando_topological_2013}, it allowed further exploration to find it quantised version, a quantum spin Hall (QSH) insulator \cite{bernevig_quantum_2006, kane_z_2005,kane_quantum_2005}.
+
+In a real 1D system with spin, you have a regular four degrees of freedom; Spin can move either direction, and can move forward and backward. This could be separated into two copies of the QH system - spin up moving forward with spin down moving backward at the top, and spin down moving forward with spin up moving backward on the bottom. This is referred to the quantum spin Hall effect (QSHE).
+But what is the key ingredient that allows this separation of states to occur? In the QHE, it's the magnetic field that breaks time reversal symmetry. For QSH insulators, the essential ingredient is \hyperref[sec:SOC]{spin orbit coupling} (SOC).
+
+An important step made by Kane and Mele\cite{kane_z_2005} was finding a ``topological invariant'' to characterise the QSH insulator states using an index. This index is called the $Z_2$ index. Topological invariants have appeared before. In the \hyperref[sec:QHE]{QHE}, the TKNN invariant $\mu$, where the quantised conductance is proportional to $\nu$. The consequence of the $Z_2$ index is it maps the parity of the number of times the 1D edge state crosses the Fermi level. An odd parity ensures the existence of an edge state and consequently the phase of a topological insulator. The result is significant in it shows how topological phases exist in band structures of insulators, and do not require  external magnetic fields breaking TRS like in the QHE \cite{ando_topological_2013}.
+
+Whilst Kane and Mele used their SOC model to investigate the bandgap opening of graphene, SOC is very difficult to experimentally detect in graphene due to the low coupling strength, compared to that of heavier species. Berneveig et al. \cite{bernevig_quantum_2006}  (Zhang's group) instead proposed a $Z_2$ model for the band structure of mercury telluride (HgTe). They predicted a CdTe/HgTe/CdTe quantum well would give rise to the QSH effect, when the HgTe layer reached a certain critical thickness. Experimental observation was confirmed soon thereafter by K\"onig \cite{konig_quantum_2007}, who observed a quantised conductivity $\sigma_{xx}$ of $2e^2/h$, due to two conducting edges. They also observed the thickness dependence.
+
+\subsubsection{Topological insulators}
+
+By this time theorists (Moore \& Balents \cite{moore_topological_2007}, Fu, Kane and Mele\cite{fu_topological_2007}) had already leapt forward and predicted 3D systems that would exhibit quantum spin hall effects. It was at this point that the term ``topological insulator'' was first coined \cite{moore_topological_2007}. This is distinct to the 2D QSH insulators, but analogous in a 3D version. For these systems there was no longer one invariant to determine the topology of a system, but rather 4 separate invariants, for 16 classes of materials. Generally they could be separated into two groups - strong and weak 3D TIs. 
+
+The first prediction for a 3D TI was by Fu and Kane\cite{fu_topological_2007-2}. They predicted that the surface states of bismuth antimony (\bismuthantimony{}) could be observed by looking at angle resolved photo emission (ARPES, see \ref{sec:ARPES}). The signature for non-trivial topology was in observing surface states crossing the Fermi energy between two TR-invariant momenta \cite{fu_topological_2007-2} %TODO - Understand this last sentence and why ARPES can do this.
+This was observed in the same system by Hsieh \etal \cite{hsieh_topological_2008}. 
+
+
+\subsubsection{Quantum anomalous Hall effect}\label{sec:QAHE}
+\textcolor{red}{Include some information on the discovery of the QAHE and the AHE, and it's relevance to both magnetic materials in addition to topological phases of matter.} %TODO QAHE
+
+%https://science-sciencemag-org.ezproxy.lib.monash.edu.au/content/340/6129/167
+%``QHE can also occur in some insulators with TRS, broken by current loops, or magnetic ordering, but without Landau levels or external magnetic fields, where it is considered the QAHE. The first Chern number can give the quantized Hall conductance.''
+%QAHE can occur by the introduction of a ferromagnetic layer.
+
+\subsection{Relevant theory and phenomena}
+\subsubsection{Topological field theory}
+In 2001 the QHE state was generalised to a 4D TR-invariant state by Zhang and Hu, and was generalised by to field theory by Bernevig \etal{}. It was also shown later by Zhang how the $Z_2$ topology could be described in this field theory, and be reduced to the 2D and 3D cases.
+
+Practically this is useful for describing electromagnetic response of TIs and predicting magnetoelectric effects, according to Ando's review \cite{ando_topological_2013}.
+
+\subsubsection{Dirac fermions}
+Within graphene, mentioned earlier for the Kane and Mele SOC model \cite{kane_quantum_2005}, the 2D electron gas over the carbon honeycomb lattice creates interesting band structure features called ``Dirac cones". The carries occupying these band structure states behave according to a pseudo-relativistic Dirac equation, behaving differently to that of regular fermions in materials. Their physical behaviour mimics that of highly relativistic situations.
+
+\paragraph{Dirac fermion mass}:\\
+Sometimes the charge carriers in graphene are called ``massless'' Dirac fermions - they behave analogous to relativistic particles with zero rest mass conforming to the Dirac equation \cite{novoselov_two-dimensional_2005-1}. This result comes from the observation of the fermions having a linear cyclotron mass with energy around the Dirac point's linear dispersion, effectively proving zero dependence on a "rest mass". Instead of their characteristic speed being the speed of light $c$, the Fermi velocity $v_F$ describes their motion.\\
+
+Generally in semiconductors and other insulators, the electronic bands eitherside of the bandgap become quite flat with curvature in momentum space. The important of such features is reflected in the effective mass of carriers as the Fermi energy locally fills states at the band edge.
+Historically, the effective mass of such carriers is calculated as \cite{kittel_introduction_nodate}
+\begin{equation}
+	m^* = \left(\frac{\partial E^2}{\partial^2k}\right)^{-1}
+\end{equation}
+For parabolic, isotropic bands, a local approximation to the effective mass is:
+\begin{align}
+	E(\textbf{k}) &= E_0 + \frac{\hbar^2\textbf{k}^2}{2m^*}\\
+\end{align}
+which satisfies the above calculation. In graphene however, the dispersion equation near the Dirac cones (the K and K' points) are similar to the Dirac equation:
+\begin{align}
+	E(\textbf{k}) \approxeq \hbar v_F \cdot \textbf{k}
+\end{align}
+If we apply the same effective mass equation, we arrive at:
+\begin{align}
+	m^* = \left(\frac{\partial v_F\cdot\textbf{k}}{\partial \textbf{k}^2}\right)^{-1} \to \infty
+\end{align}
+If the carriers were really so heavy, conduction would be very restricted in Graphene. Instead, a different method of calculating the effective mass has to be used  \cite{ariel_electron_2013} avoiding divergence.
+
+\begin{align}
+	m^*(E,\textbf{k}) &= \frac{p}{v_g} = h^2\textbf{k}\left(\frac{\partial E}{\partial \textbf{k}}\right)^{-1}\\
+	&= h k \frac{1}{v_F}
+\end{align}
+This yields the mass proportional to the linear dispersion, exhibiting relativistic behaviour.
+
+\paragraph{Dirac particles in topological insulators}:\\
+As pointed out by Ando\cite{ando_topological_2013}, Spin-orbit interactions and 3D ``massive'' Dirac theory have been known for a long time in Bismuth research, which has also been a playground for it's diamagnetism (different to Pauli paramagnetism \& diamagnetism). Wolff \cite{wolff_matrix_1964} showed that a 2 band bismuth model can be transformed into a 4-part Dirac Hamiltonian. 
+
+It's interesting that both Bismuth and another semi-metal antimony were used to produce the first 2D TI surface states in \bismuthantimony{} where 2D surface ``massless'' Dirac systems exist. A distinguishing property of massless Dirac fermions is the Berry phase of $\pi$, which provides an absence of backscattering \cite{ando_berrys_1998}. The TI surface states consequently electronically protected from some scattering.

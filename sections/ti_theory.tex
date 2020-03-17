@@ -1,0 +1,158 @@
+\documentclass[../mattg_ti-fi_lit-review.tex]{subfiles}
+
+\subsection{Berry Phase}
+
+\textbf{Berry Connection} is the bra-ket of a Gradient operator of vector $\vec{R}$ acting on a wavefunction over some path  $\Gamma$ with positions $\vec{R}$. Physically it is the mechanism from getting one geometric space point to another, ie the change of parameters.
+\begin{equation}
+\vec{\mathcal{A}_n}(\vec{R}) = i\braket{\psi_n(\vec{R})|\nabla_{\vec{R}}|\psi_n(\vec{R})}
+\end{equation}
+This object has N parts, for each of the vector components. There's a different connection for every eigenstate, of every point in the space. 
+It's a little more subtle than a vector - it transforms under Gauge transformations. For an example wavefunction to include some additional phase factor (i.e. Gauge transformation), the wavefunction transforms as $\ket{\psi_n'(\vec{R})}=e^{-i\beta(\vec{R})}\ket{\psi_n(\vec{R})}$. This results in a change for the Berry connection:
+\begin{equation}
+\vec{\mathcal{A}_n'}(\vec{R}) = \vec{\mathcal{A}_n}(\vec{R}) + \nabla_{\vec{R}}\beta(\vec{R})
+\end{equation}
+So the ``connection" is that it transforms with the gradient of a function, like a vector potential.
+
+\textbf{Berry Curvature} is the consequence or result of going from one set of starting parameters to the same set of parameters over some path (also called a \textbf{connection}). You could use the Schroedinger equation to provide a connection. It turns out that through evolution the state can pick-up a phase factor, relative to the original starting state. This phase factor is also known as the Berry phase\cite{berry_quantal_1984}, and has consequences for the quantum mechanical properties of the system.
+
+The \textbf{Berry Phase} is the integral
+\begin{align}
+\gamma_n(\Gamma) &= \int_\Gamma \vec{\mathcal{A}_n}(\vec{R})\cdot d\vec{R}
+\end{align}
+By changing the gauge of the Berry phase we can notice some properties that shift:
+\begin{align}
+\gamma'_n(\Gamma) &= \int_\Gamma \vec{\mathcal{A}_n}(\vec{R})\cdot d\vec{R} + \int_\Gamma \nabla_{\vec{R}}\vec{\beta} \cdot d\vec{R}\\
+\implies \gamma'_n(\Gamma) &= \gamma_n(\Gamma) + \beta(R_f) - \beta(R_i)
+\end{align}
+It's not Gauge invariant, which makes it difficult to be useful for different measurements. However, if you begin \textbf{AND} end in the same configuration point (ie, a closed loop) then this value is Gauge invariant! This imposes a few restrictions on the system to achieve a result.
+\begin{itemize}
+	\item Eigenstates have to be imaginary to achieve a non-zero Berry phase.
+	\item If the path is 1D, then the integration cancels out to result in a zero Berry phase, again.
+\end{itemize}
+In 3D systems, the Berry phase over some path $\Gamma$ enclosing a surface $S$, then Stokes theorem lets you specify the \textbf{Berry curvature} 
+\begin{align}
+\oint_\Gamma \vec{\mathcal{A}_n}\cdot d\vec{R} &= \oiint_S \left(\nabla\times\vec{\mathcal{A}}\right)\cdot d\vec{S}\\
+\vec{D}&=\nabla_{\vec{R}}\times\vec{\mathcal{A}}_n(\vec{R})
+\end{align}
+
+\subsubsection{Aharonov–Bohm Effect}
+\textcolor{red}{Todo: Fill out some basic theory and why the Berry phase solves this problem} %TODO: Aharonov–Bohm effect
+
+\subsection{Symmetries}
+\subsubsection{Time-reversal symmetry}
+\textcolor{red}{TODO: explain the role of TR symmetry}
+\subsubsection{Inversion symmetry}
+Bulk states are spin-degenerate, because of combination of space-inversion symmetry ($E(k,\uparrow) = E(-k, \uparrow)$) and time-reversal symmetry ($E(k,\uparrow) = E(-k, \downarrow)$) \cite{hsieh_observation_2009}.
+At the surface however where inversion symmetry is broken, spin-orbit interaction can arise due to asymmetric electric fields and lift the spin degeneracy. 
+
+\subsubsection{Particle-hole symmetry}
+\textcolor{red}{TODO: explain the role of particle-hole symmetry}
+\subsubsection{Sublattice symmetry}
+\textcolor{red}{TODO: explain the role of sublattice symmetry}
+
+\subsubsection{Kramers theorem}
+Kramers theorem requires particular points mapped from the BZ (Brouillin zone) to retain spin degeneracy. For \bismuthantimony{}, spin states split at the surface by spin-orbit interaction must remain spin-degenerate at four special TR invariant momenta; $\Gamma$, and three equivalent $M$ points. Ref in Hsieh \etal{}\cite{hsieh_observation_2009}. %TODO fixup quote original reference.
+
+\subsection{Topological invariants}
+\subsubsection{TKNN invariant}
+\textcolor{red}{A detailed calculation for the TKNN invariant will be added in the future.} %TODO
+
+Simon first showed \cite{simon_holonomy_1983} that the Berry phase is significantly related to the TKNN topological invariant.
+
+\subsubsection{$Z_2$ invariant}
+\textcolor{red}{A detailed calculation for this invariant will be added in the future.} %TODO
+\subsubsection{$Z_2$ invariant in 3D}\label{sec:z2-3D}
+\textcolor{red}{A detailed calculation for this invariant will be added in the future.} %TODO
+
+\subsection{Spin-orbit coupling}\label{sec:SOC}
+Spin-orbit coupling (SOC) is coupling of both spin and orbital angular momentum properties of particles. Spin provides a magnetic moment, and the motion of the charged electron through its orbital angular momentum also provides a magnetic moment. From the electrons point of view, it can be considered to be the interaction of the electron's spin with the orbital motion of the nucleus, or through a crystal with a periodic potential.
+
+Llewellyn Thomas derived the spin-orbit energy splitting for the hydrogen atom in 1926 \cite{thomas_motion_1926,thomas_kinematics_1927}. You can derive the SOC from the Dirac equation for a spin $\frac{1}{2}$ particle in the presence of an electromagnetic field (ie, proton for hydrogen atom).
+\begin{align}
+	\left(E-mc^2\right)\psi = \left(\frac{p^2}{2m} - \frac{p^4}{8m^3 c} + V - \frac{\hbar}{4m^2c^2} \frac{\partial V}{\partial r} \frac{\partial}{\partial r} + \frac{1}{2m^2c}\frac{1}{r}\frac{\partial V}{\partial r}\textbf{S}\cdot\textbf{L}\right)\psi
+\end{align}
+The first and third terms are the same as the non-relativistic Schrodinger equation, the second term is the relativistic correction, and the last term is the spin-orbit coupling.\\
+%\textcolor{red}{A detailed calculation for the origin of the SOC will be added in the future.} 
+%TODO
+
+You may also see the SOC represented by Hamiltonian terms such as
+\begin{align}
+	H_{SO} & \propto \bm{\sigma} \cdot \left( \vec{\textbf{E}} \times \vec{\textbf{p}} \right)
+\end{align}
+where $\bm{\sigma}$ are the Pauli matrices, $\vec{\textbf{E}},\vec{\textbf{p}}$ are the external electric field and momentum operator respectively. You can think of the momentum of the electron moving through the electric field as inducing a magnetic field interaction with the spin.
+
+This coupling causes splitting, similar to Zeeman splitting, of electronic energy levels. For different atoms, the SOC is different, with the trend that heavier atoms have a larger SOC \cite{herman_relativistic_1963}. \newline
+
+\textcolor{red}{Add diagram of SOC strength of different atomic species}\newline %TODO
+
+Within materials, SOC doesn't break time-reversal symmetry like magnetic field does for the QHE, but it can lead to the \hyperref[sec:QSHE]{QSHE}, where electrons differentiated by their spin move in opposite directions. Physical effects of SOC in most solid state materials typically result in the Rashba effect or the Dresselhaus effect \cite{majumdar_105_2011}
+
+\subsubsection{Dresselhaus effect}
+The SOC for Bloch electrons (crystalline solid state) was first noted by Elliot and Dresselhaus \cite{bihlmayer_focus_2015}. Dresselhaus in particular demonstrated the SOC splitting of atomic orbitals could alter cyclotron resonance spectra in semiconductors, and went onto study type III-V and II-VI semiconductor structures in the early 1950's.
+The Dresselhaus effect occurs in crystals with bulk inversion asymmetry.
+
+\textbf{Inversion symmetry} is when the crystal is symmetric under inversion, from some lattice point from the origin). The breaking of inversion symmetry (inversion asymmetry) is usually important in allowing non-linear effects to take place in materials, otherwise even harmonics of wave functions become suppressed. This includes materials that allow high harmonic generation, such as in ultra-fast femtosecond pulses \cite{popmintchev_bright_2012}.
+
+Practically, the fact that net electric fields exist within crystals for particular crystal directions gives rise to spin-orbit interactions. 
+
+\subsubsection{Rashba effect}
+Rashba studied a different type of crystal to Dresselhaus, known as a ``wurtzite structure'' in the late 1950's. His paper with Sheka demonstrated linear dispersion relationships near the $\Gamma$ point. This paper (hard to come by online due to lack of translation and availability in the Soviet Union) is translated to English and included in Bihlmayer \etal{} \cite{bihlmayer_focus_2015}.
+The Rashba effect occurs in crystals also with net electric field; this one is due to structural inversion asymmetry, rather than bulk asymmetry. In particular systems such as those with uniaxial symmetry (in one axis only) such as the hexagonal crystals of cadmium-sulphur and cadmium-selenide where it was originally found by Rashba and Sheka.
+
+\paragraph{Rashba-Edelstein Effect in Ferromagnetic Materials}
+\textcolor{red}{Todo: discuss some results of the Rashba effect in magnetic materials.} %TODO
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+	\item \url{{https://doi-org.ezproxy.lib.monash.edu.au/10.1016\%2F0038-1098\%2890\%2990963-C}}
+	\item \url{https://doi-org.ezproxy.lib.monash.edu.au/10.1038\%2Fnphys1362}
+	\item \url{ https://www-nature-com.ezproxy.lib.monash.edu.au/articles/nature13534}
+	\item \url{https://advances.sciencemag.org/content/5/8/eaaw3415}
+	\item \url{https://tms16.sciencesconf.org/data/pages/TI\_lecture2.pdf}
+	\item \url{https://arxiv.org/pdf/1401.0848.pdf}
+\end{itemize}
+
+\subsection{Hamiltonians of TI Materials}
+The following models from Qi \& Zhang\cite{qi_quantum_2010}  are formed for QSHE by a Hamiltonian that is a Taylor expansion in the wavevector \textbf{k} of interactions between highest and lowest conduction bands.
+
+\subsubsection{HeTe (Mercury Telluride)}
+\begin{equation}
+H(\textbf{k}) = \epsilon(k)\mathds{1} + \left(
+\begin{matrix}
+M(k) & A(k_x+ik_y) & 0 & 0\\
+A(k_x+ik_y) & -M(k) & 0 & 0\\
+0 & 0 & M(k) & -A(k_x+ik_y)\\
+0 & 0 & -A(k_x+ik_y) & -M(k)
+\end{matrix}
+\right)
+\end{equation}
+with \begin{equation}
+\epsilon(k)=C+Dk^2, M(k) = M - Bk^2
+\end{equation}
+
+Here the upper 2x2 block describes the spin-up electrons in the s-like E1 conduction and p-like H1 valence bands. The lower 2x2 block describes the spin-down electrons in those same bands.
+
+$\epsilon$ is the unimportant bending of all bands, where $\mathds{1}$ is the identity matrix. The energy gap between the bands is $2M$, and $B$ describes the curvature of the bands. $A$ incorporates the inter-band coupling at lowest order. $M/B < 0$ has eigenstates of a trivial insulator. $M/B > 0, M$ becomes negative, and solution yields edge states of QSHE. You can also practise doing this with a 2D TI honeycomb lattice to gain explicit understanding like Kane and Mele \cite{kane_quantum_2005,kane_z_2005}.
+
+\textcolor{red}{Plot and display the eigenstates against momentum}
+
+\subsubsection{\bismuthtelluride{} (Bismuth Telluride) }
+
+\begin{equation}
+H(\textbf{k}) = \epsilon(k)\mathds{1} + \left(
+\begin{matrix}
+M(\textbf{k}) & A(k_x+ik_y) & 0 & A_1k_z\\
+A(k_x+ik_y) & -M(\textbf{k}) & A_1k_z & 0\\
+0 & A_1k_z & M(\textbf{k}) & -A(k_x+ik_y)\\
+A_1k_z & 0 & -A(k_x+ik_y) & -M(\textbf{k})
+\end{matrix}
+\right)
+\end{equation}
+with \begin{equation}
+\epsilon(k)=C+D_1k_z^2 + D_2k_\perp^2, M(k) = M - B_1k_z^2 - B_2k_\perp^2
+\end{equation}
+\bismuthtelluride{} follows a similar model, in the context of bonding and anti-bonding $p_z$ orbitals with both spins. $B_1$ and $B_2$ have the same sign, and as before, depending on the sign of M, the bands undergo inversion. 
+
+It is essential to be in 3D to be able to construct a single Dirac cone for a 2D surface - the degeneracy of graphene with six Dirac cones makes it clear. The 2D HgTe quantum well at the crossover point $d=d_c$ also has two Dirac cones.
+
+%TODO Re-include
+%\subsection{Kubo formula}
+%\subsection{Band inversion}

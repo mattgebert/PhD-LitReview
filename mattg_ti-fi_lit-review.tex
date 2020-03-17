@@ -40,7 +40,7 @@
 \usepackage{esint} %allows use of \oint \oiint and other such integrals. Use \limits_{Expression} to place underneath integrals.
 \usepackage{csquotes} %Allows quotations, such as \enquote, \blockcquote or \begin{dispalycquote}
 \usepackage{epigraph} %Allows feature quotations which look niceish. \epigraph{Quote}{Author}
-
+\usepackage{bm} %Allows bold maths letters such as \bm{\sigma}
 
 
 %-----------------------COMMANDS-----------------------
@@ -81,7 +81,10 @@
 \newcommand{\mercurytelluride}[1]{HgTe#1}
 \newcommand{\cadmiumtelluride}[1]{CdTe#1}
 \newcommand{\bismuthantimony}[1]{Bi$_{1-x}$Sb$_x$#1}
+\newcommand{\bismuthtellurideselenide}[1]{Bi$_{2}$Te$_{2}$Se}
 
+%Units
+\newcommand{\mobilityunits}{cm$^2$/Vs}
 
 
 %-----------------------DOCUMENT SETUP-----------------------
@@ -133,55 +136,37 @@
 	\pagenumbering{arabic}
 	\normalfont\normalsize
 		
+		
+\renewcommand{\baselinestretch}{0.94}\normalsize
+\tableofcontents
+\renewcommand{\baselinestretch}{1}\normalsize
+		
 \section{Introduction}
+\subfile{sections/intro.tex}
 
-\textcolor{red}{TO COMPLETE AFTER}
+\section{Topological insulator history}
+\subfile{sections/ti_hist.tex}
 
-\section{Topological Insualtors}
-\subfile{sections/topological_insulators.tex}
+\section{Topological insulator theory}
+\subfile{sections/ti_theory.tex}
 
-\section{Magnetic Materials}
+\section{Topological insulator materials}
+\subfile{sections/ti_mats.tex}
+
+\section{Magnetic materials}
 \subfile{sections/magnetic_materials.tex}
 
-
-\section{TI \& FI Heterostructures}
+\section{TI \& FI heterostructures}
 \subfile{sections/TI_&_FI_Heterostructures.tex}
 
-\section{Experimental Methods}
+\section{Experimental methods}
 \subfile{sections/experimental_methods.tex}
 
-
-\section{Knowledge \& Concepts}
-\subsection{Symmetry}
-Symmetry is very important in all physical systems. 
-For example, the order exhibited in crystals can be described through the breaking of the continuous (rotational \& translational) symmetry of space. This is due to the electrostatic interactions that cause a periodic lattice. In Magnets, spin space and time reversal symmetry are broken.
-
-
-\subsection{Spintronics}
-\subsubsection{Ahrimhov Bohm Effect}
-
-\subsection{Fine Structure Constant}
-The fine structure constant, also known as Sommerfields constant, is the coupleing constant "$\alpha$" that measures the strength of the EM force interacting with light.
-
-Two methods it has been measured by include the anomalous magnetic moment of the electron, $a_e$, as well as appearing in the Quantum Hall Effect (QHE). 
-
-It was originally introduced by Summerfieldas a theoretical correction to the Bohr  model, explaining fine structure through elliptical orbits and relitivistic mass-velocity. 
-
-\subsection{Hamiltonians of Crystal Lattices}
-Turns out that you can describe the hamiltonian of the electrons in a crystal lattice.  For this, there exists first quantisation, second quantisation hamiltonian.
-
-\begin{itemize}
-	\item First quantisation - The classical particles are assigned wave amplitudes. This is "semi-classical" where only the particles or objects are treated using quantum wavefunctions, but environment is classical. 
-	\item Second quantisation (Canonical Quantisation, occupation number representation) - The wave fields are "quantized" to describe the problem in terms of "quanta" or particles. This usually means referring to a wavefunction of a state, described the the vacuum state with a series of creation operators to create the current state.
-	Fields are now treated as field operators, similar to how physical quantities (momentum, position) are thought of as operators in first quantisation. 
-\end{itemize}
-
-\subsubsection{Graphene}
-
+\section{Related knowledge \& concepts}
+\subfile{sections/knowledge.tex}
 
 \section{Quotes}
 \epigraph{\textit{Finally we introduce the parameter of which all the fuss is about.}}{R.F. Hofstadter, \textit{\cite{hofstadter_energy_1976}}}
-
 
 \section{Questions to Answer}
 	\begin{itemize}
@@ -192,15 +177,35 @@ Turns out that you can describe the hamiltonian of the electrons in a crystal la
 		\item Why is spin-polarization called "Helical" spin polarization?
 	\end{itemize}
 
-\section{Glossary}
-\subfile{sections/glossary.tex}
+%\section{Glossary}
+%\subfile{sections/glossary.tex}
 
-\section{Review Article Notes}
-\subfile{sections/notes.tex}
+%\section{Review Article Notes}
+%\subfile{sections/notes.tex}
 
 \bibliographystyle{unsrtnat}
 \bibliography{MyLibrary}
 
+%------------------------------------------------------------------------
+% -----------------------Template Code Items-----------------------------
+%------------------------------------------------------------------------
 
+%%% ----------- Double figure, aligned ---------------%%%
+%\begin{figure}[H]
+%	\centering
+%	\begin{minipage}[t]{.45\textwidth}
+%		\includegraphics[width=\linewidth]{}
+%		\caption{
+%			\\Source: , }
+%		\label{fig:}
+%	\end{minipage}
+%	\hspace{0.05\textwidth}
+%	\begin{minipage}[t]{.45\textwidth}
+%		\includegraphics[width=\linewidth]{}
+%		\caption{
+%			\\Source: , }
+%		\label{fig:}
+%	\end{minipage}
+%\end{figure}
 
 \end{document}
