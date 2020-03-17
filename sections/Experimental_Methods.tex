@@ -4,6 +4,19 @@
 \textcolor{red}{TODO: fill in with summary of previous growth methods and experimental methods used for heterostructures}.
 \subsubsection{MBE Growths}
 
+\subsubsection{Doping}
+Kim \etal{} \cite{kim_surface_2012} managed to heavily p-dope a sample of \bismuthselinide{} through the use of F4TCNQ molecules, as well as the use of an electrochemical doping with a polymer electrolyte top gate, in order to p-type dope the sample (see Fig. \ref{fig:exp_doping_molecules}). The latter method works by a capacitance between sample surface to induce negatively charged ions. This was necessary to be able to gate the sample near the Dirac point.
+\begin{figure}[H]
+	\centering
+	\begin{minipage}[t]{.95\textwidth}
+		\includegraphics[width=\linewidth]{exp_doping_molecules}
+		\caption{\textbf{a)} P-type doping and gate configuration for charge transfer doping with F4TCNQ molecules \textbf{b)} and polymer electrolyte (PEO + LiClO$_4$) top gating.
+		\\Source: Kim \etal{} \cite{kim_surface_2012}, Nature Physics 459, 8 (2012)}		\label{fig:exp_doping_molecules}
+	\end{minipage}
+\end{figure}
+
+Alternatively, Hsieh \etal{} \cite{hsieh_tunable_2009} managed to p-type dope \bismuthselinide{} through the use of an extrinsic molecule nitrogen dioxide (NO$_2$) in UHV.
+
 \subsection{Spectroscopic Metrological Methods}
 \subsubsection{ARPES}\label{sec:ARPES}
 For material characterisation, angle resolved photo-emission spectroscopy (ARPES) is a method of resolving the ejection of electrons from a material by high energy photons. Analysis of the momentum of the incident and emission resolve the electronic band structure.
@@ -11,14 +24,26 @@ For material characterisation, angle resolved photo-emission spectroscopy (ARPES
 There now exist a variety of different ARPES methods that can be employed in understanding the electronic structure of materials; these include ``soft-X-ray ARPES, time-resolved ARPES, spin-resolved ARPES and spatially resolved ARPES''\cite{lv_angle-resolved_2019}. The progress fo UV and soft-X-ray synchrotron light sources make it possible to distinguish between bulk and surface states for TI materials. Spin detectors determine the spin state of emitted electrons, allowing insight into spin-textures of surface states. Time-resolved ARPES (using femtosecond pulses) allows observation of ``ultrafast electronic dynamics and states above the chemical potential" \cite{lv_angle-resolved_2019}. Finally, spatially resolved ARPES can be used to pinpoint sub-micron scale features, particularly if you want to distinguish between phases, or across material gradients (such as gradient MBE growths).
 
 \paragraph{Spin Resolved ARPES}\label{sec:ARPES-SR}
-The first spin resolved (SR) ARPES that yielded the direct observation of helical spin-polarization was done by Hsieh \etal \cite{hsieh_observation_2009} at the end of 2008, again in \bismuthantimony{}, followed with more detailed results by Nishide \etal{}\cite{nishide_direct_2010}. 
+The first spin resolved (SR) ARPES that yielded the direct observation of helical spin-polarization was done by Hsieh \etal \cite{hsieh_observation_2009} at the end of 2008 (see Fig. \ref{fig:ti_bisb_arpes}), again in \bismuthantimony{}, followed with more detailed results by Nishide \etal{}\cite{nishide_direct_2010}. 
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}[t]{.95\textwidth}
+		\includegraphics[width=\linewidth]{ti_bisb_arpes}
+		\caption{ARPES observation of spin polarised surface states in \bismuthantimony{}. \textbf{a)} Spin integrated intensity map of $Bi_{0.91}Sb_{0.09}$ at $E_F$. \textbf{b)} Surface band-dispersion along the $\bar{\Gamma}\to\bar{M}$ direction showing 5 Fermi-level crossings. \textbf{c)} Spin-resolved momentum distribution curves at binding energy $E_B=-25$ meV, showing band degeneracy.
+		\\Source: Hsieh \etal{} \cite{hsieh_observation_2009}, Science Vol. 323, 920 (2009)}
+		\label{fig:ti_bisb_arpes}
+	\end{minipage}
+\end{figure}
 
 In these experiments, topological details could be found by studying the surface band-dispersion and their respective spin polarizations. For example, the fact that there are 5 bands implies that an odd number of Fermi-surfaces enclose the spin-degenerate K points. This gives rise to determining the topological quantum number $\nu_0=1$ (0 if even). 
 
 However Ando argued that these conclusions were questionable, due to purely relying on states already existing in Bismuth, which did not agree well with theoretical calculations \cite{ando_topological_2013}.
 
+A study completed by April 2009 and published in July also by Hsieh \etal{} made the first conclusive observation of helical Dirac fermions in \bismuthselinide{} \cite{hsieh_tunable_2009}. Here the detection of the spin angular momentum components were measured by the use of two 40-kV Mott detectors.
+
 \subsubsection{Spin polarized STS}
-The first scanning tunelling spectropscopy (STS) study on \bismuthantimony{} was published in 2009 by Roushan \etal{\cite{roushan_topological_2009}} who detected the absense of backscattering even with strong system disorder. By taking fourier transforms of the surface state data they take, they can infer scattering information and lattice information. Combining this with spin-resolved ARPES they could determine the spin dependent scattering probability, and match their STS measurements to 95\%. Doing the same with spin-independent scattering yields a match of only 80\%.
+The first scanning tunelling spectropscopy (STS) study on \bismuthantimony{} was published in 2009 by Roushan \etal{\cite{roushan_topological_2009}} who detected the absence of backscattering even with strong system disorder. By taking fourier transforms of the surface state data they take, they can infer scattering information and lattice information. Combining this with spin-resolved ARPES they could determine the spin dependent scattering probability, and match their STS measurements to 95\%. Doing the same with spin-independent scattering yields a match of only 80\%.
 
 \subsection{Transport Metrological Methods}
 
@@ -37,6 +62,8 @@ Taskin \& Ando \cite{taskin_quantum_2009} used quantum behaviour reported in Bi 
 
 
 The derivative of the both $\rho_{xx}$ and $\rho_{xx}$ with respect to B, plotted against $1/B$ show Shubnikov-de Haas (SdH) oscillations below 2T field strength, as shown in Fig \ref{fig:ti_bisb_qo}c. This is a quantum effect, and consequently is argued that it comes from a well-defined Fermi surface, not some impurity band which wouldn't be stable. The previous measurements of the resistivity with different doping proportions confirmed the insulating nature of the samples.
+
+
 
 \subsubsection{Magnetization}
 Taskin \& Ando \cite{taskin_quantum_2009} measured DC magnetization using a SQUID magnetometer.

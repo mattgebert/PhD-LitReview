@@ -71,7 +71,7 @@
 \newcommand{\silicondioxide}[1]{SiO$_2$#1}
 \newcommand{\aluminimumoxide}[1]{AlO$_3$#1}
 \newcommand{\galliumoxide}[1]{GaO$_3$#1}
-\newcommand{\tinoxide}[1]{SnO}
+\newcommand{\tinoxide}[1]{SnO#1}
 \newcommand{\bismuthoxide}[1]{Bi$_2$O$_3$#1}
 \newcommand{\bismuthselinide}[1]{Bi$_2$Se$_3$#1}
 \newcommand{\bismuthtelluride}[1]{Bi$_2$Te$_3$#1}
@@ -81,7 +81,8 @@
 \newcommand{\mercurytelluride}[1]{HgTe#1}
 \newcommand{\cadmiumtelluride}[1]{CdTe#1}
 \newcommand{\bismuthantimony}[1]{Bi$_{1-x}$Sb$_x$#1}
-\newcommand{\bismuthtellurideselenide}[1]{Bi$_{2}$Te$_{2}$Se}
+\newcommand{\bismuthtellurideselenide}[1]{Bi$_{2}$Te$_{2}$Se#1}
+\newcommand{\chromiumtriiodide}[1]{CrI$_3$#1}
 
 %Units
 \newcommand{\mobilityunits}{cm$^2$/Vs}
@@ -153,8 +154,11 @@
 \section{Topological insulator materials}
 \subfile{sections/ti_mats.tex}
 
-\section{Magnetic materials}
-\subfile{sections/magnetic_materials.tex}
+%%% Magnetic materials excluded due to too broad. Instead made a file just for ferromagnetic insulators.
+%\section{Magnetic materials}
+%\subfile{sections/magnetic_materials.tex}
+\section{Ferromagnetic Insulators}
+\subfile{sections/fi_mats.tex}
 
 \section{TI \& FI heterostructures}
 \subfile{sections/TI_&_FI_Heterostructures.tex}
