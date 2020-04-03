@@ -1,76 +1,54 @@
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
-\contentsline {section}{\numberline {2}Topological insulator history}{3}{section.2}%
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Discovery of topological insulators}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}History through Hall effects}{3}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Quantum Hall effect}{3}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Quantum spin Hall effect}{5}{subsubsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.3}Topological insulators}{5}{subsubsection.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.1.4}Quantum anomalous Hall effect}{5}{subsubsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.2}Relevant theory and phenomena}{6}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Topological field theory}{6}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Dirac fermions}{6}{subsubsection.2.2.2}%
-\contentsline {paragraph}{Dirac fermion mass}{6}{section*.4}%
+\contentsline {subsubsection}{\numberline {2.1.2}Berry Phase}{4}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Quantum spin Hall effect}{5}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Topological insulators}{6}{subsubsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.2}Dirac fermions}{6}{subsection.2.2}%
+\contentsline {paragraph}{Dirac fermion mass}{7}{section*.4}%
 \contentsline {paragraph}{Dirac particles in topological insulators}{7}{section*.5}%
-\contentsline {section}{\numberline {3}Topological insulator theory}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Berry Phase}{7}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Aharonov–Bohm Effect}{8}{subsubsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.2}Symmetries}{8}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Time-reversal symmetry}{8}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Inversion symmetry}{8}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Particle-hole symmetry}{8}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Sublattice symmetry}{8}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}Kramers theorem}{8}{subsubsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.3}Topological invariants}{8}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}TKNN invariant}{8}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}$Z_2$ invariant}{8}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}$Z_2$ invariant in 3D}{9}{subsubsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.4}Spin-orbit coupling}{9}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Dresselhaus effect}{9}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Rashba effect}{10}{subsubsection.3.4.2}%
-\contentsline {paragraph}{Rashba-Edelstein Effect in Ferromagnetic Materials}{10}{section*.6}%
-\contentsline {subsection}{\numberline {3.5}Hamiltonians of TI Materials}{10}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}HeTe (Mercury Telluride)}{10}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Bi$_2$Te$_3$ (Bismuth Telluride) }{10}{subsubsection.3.5.2}%
-\contentsline {section}{\numberline {4}Topological insulator materials}{11}{section.4}%
-\contentsline {subsection}{\numberline {4.1}CdTe/HgTe/CdTe quantum wells}{11}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Bi$_{1-x}$Sb$_x$}{12}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}\{Bi,Sb\}$_2$\{Se,Te\}$_3$ family}{12}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Bi$_2$Te$_3$}{13}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Bi$_2$Se$_3$}{14}{subsubsection.4.3.2}%
-\contentsline {section}{\numberline {5}Ferromagnetic Insulators}{16}{section.5}%
-\contentsline {subsection}{\numberline {5.1}2D FIs}{16}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Chromium triiodide (CrI$_3$)}{16}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Cr$_2$Ge$_2$Te$_6$ (CGT)}{17}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Magnesium Titinate (MgTiO$_3$, MTO)}{18}{subsubsection.5.1.3}%
-\contentsline {subsubsection}{\numberline {5.1.4}Other 2D ferromagnetic materials}{18}{subsubsection.5.1.4}%
-\contentsline {section}{\numberline {6}TI \& FI heterostructures}{19}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Theory}{19}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Spin Torque}{19}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Torque}{19}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Spin Torque Angle - Spin Torque Efficiency}{19}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}Magnetization}{19}{subsubsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {6.2.4}Critical Current Density}{19}{subsubsection.6.2.4}%
-\contentsline {subsubsection}{\numberline {6.2.5}Charge Spin Conversion Efficiency}{19}{subsubsection.6.2.5}%
+\contentsline {section}{\numberline {3}Topological insulator physics}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Topological invariants}{8}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}TKNN invariant}{8}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}$Z_2$ invariant}{8}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}$Z_2$ invariant in 3D}{8}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Spin-orbit coupling}{8}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Dresselhaus effect}{8}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Rashba effect}{9}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Hamiltonians of TI Materials}{9}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}HeTe (Mercury Telluride)}{9}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Bi$_2$Te$_3$ (Bismuth Telluride) }{9}{subsubsection.3.3.2}%
+\contentsline {section}{\numberline {4}Topological insulator materials}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}CdTe/HgTe/CdTe quantum wells}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Bi$_{1-x}$Sb$_x$}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}\{Bi,Sb\}$_2$\{Se,Te\}$_3$ family}{11}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Bi$_2$Te$_3$}{11}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Bi$_2$Se$_3$}{12}{subsubsection.4.3.2}%
+\contentsline {section}{\numberline {5}Ferromagnetic Insulators}{15}{section.5}%
+\contentsline {subsection}{\numberline {5.1}2D FIs}{15}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Chromium triiodide (CrI$_3$)}{15}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Cr$_2$Ge$_2$Te$_6$ (CGT)}{15}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Magnesium Titinate (MgTiO$_3$, MTO)}{16}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}Other 2D ferromagnetic materials}{16}{subsubsection.5.1.4}%
+\contentsline {section}{\numberline {6}TI \& FI heterostructures}{17}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Spin Torque Devices}{17}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Torque}{18}{subsubsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.2}Quantum Anomalous Hall Effect (QAHE)}{19}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Experiments}{19}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Conductive films (non-insulating)}{19}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}Insulating Films}{20}{subsubsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.4}Non-TI Devices}{20}{subsection.6.4}%
-\contentsline {section}{\numberline {7}Experimental methods}{20}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Synthesis, Growth and Fabrication}{20}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}MBE Growths}{20}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.2}Doping}{20}{subsubsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.2}Spectroscopic Metrological Methods}{21}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}ARPES}{21}{subsubsection.7.2.1}%
-\contentsline {paragraph}{Spin Resolved ARPES}{21}{section*.18}%
-\contentsline {subsubsection}{\numberline {7.2.2}Spin polarized STS}{22}{subsubsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.3}Transport Metrological Methods}{22}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Quantum Oscillations}{22}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Magnetization}{23}{subsubsection.7.3.2}%
-\contentsline {section}{\numberline {8}Related knowledge \& concepts}{23}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Symmetry}{23}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Symmetry points}{23}{subsubsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.2}Fine Structure Constant}{24}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Hamiltonians of Crystal Lattices}{24}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Quotes}{25}{section.9}%
-\contentsline {section}{\numberline {10}Questions to Answer}{25}{section.10}%
-\contentsline {section}{\numberline {11}Bibliography}{25}{section.11}%
+\contentsline {subsubsection}{\numberline {6.3.1}Conductive ferromagnetic films}{19}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Insulating ferromagnetic films}{19}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}Not-quite TI-Ferromagnetic heterostructures}{21}{subsubsection.6.3.3}%
+\contentsline {section}{\numberline {7}Experimental methods}{21}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Synthesis, Growth and Fabrication}{21}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Doping}{21}{subsubsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.2}Spectroscopic Metrological Methods}{22}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}ARPES}{22}{subsubsection.7.2.1}%
+\contentsline {paragraph}{Spin Resolved ARPES}{22}{section*.22}%
+\contentsline {subsubsection}{\numberline {7.2.2}Spin polarized STS}{23}{subsubsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.3}Transport Metrological Methods}{23}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Quantum Oscillations}{23}{subsubsection.7.3.1}%
+\contentsline {section}{\numberline {8}Quotes}{24}{section.8}%
+\contentsline {section}{\numberline {9}Questions to Answer}{24}{section.9}%
+\contentsline {section}{\numberline {10}Bibliography}{25}{section.10}%
